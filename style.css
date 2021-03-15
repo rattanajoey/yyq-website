@@ -1,0 +1,488 @@
+/* splash page */
+
+body {
+    color: #333;
+    background-color: #fbfbfb;
+    font-family: proxima-nova;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.6em;
+    letter-spacing: 0.5px;
+}
+
+body, html{
+    height: 100%;
+    margin: 0px;
+}
+
+a {
+    text-decoration: none;
+}
+
+a, a:visited {
+    color: #222;
+}
+
+h1 {
+    font-size: 2.2em;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+h1, h2, h3 {
+    color: #5a86ba;
+    font-family: futura-pt;
+    font-weight: 700;
+    font-style: normal;
+    line-height: 1.2em;
+    text-transform: none;
+    letter-spacing: 0px;
+    margin-bottom: 0.75em;
+}
+
+h3 {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 1.2em;
+}
+
+.splash-background{
+    background-image: url(./images/splash_background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 100% 56%;
+    height: 100%;
+    width: 100%;
+}
+
+.splash-filter{
+    background-color: rgb(141, 133, 144, 0.3);
+    height: 100%;
+    width: 100%;
+}
+
+.splash-content{
+    text-align: center;
+    height: 100%;
+    padding: 40px 60px 60px 60px;
+    box-sizing: border-box;
+    display:block;
+}
+
+.splash-name{
+    color: #fff;
+    display: inline-block;
+    line-height: 1em;
+    font-size: 22px;
+    margin-top: 0;
+    margin-bottom: 0; 
+    text-transform: uppercase;
+    font-weight: 500;
+    font-style: normal;
+    letter-spacing: 0.14em;
+}
+
+.splash-main{
+    margin: 0 auto;
+    max-width: 880px;
+    position: absolute;
+    left: 60px;
+    right: 60px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+@media screen and (max-width: 1020px){
+    .splash-main {
+        width: auto;
+    }
+    .splash-sub-title{
+        font-size: 18px;
+    }
+}
+
+.splash-title{
+    margin-bottom: 20px;
+}
+
+.splash-title-name{
+    color: #fff;
+    display: inline-block;
+    font-size: 110px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1em;
+    letter-spacing: -0.01em;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    text-transform: none;
+}
+
+.splash-sub-title{
+    color: #fff;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.4m;
+    letter-spacing: 0.04em;
+    margin: 0 auto;
+    margin-bottom: 40px;
+    max-width: 36em;
+    position: relative;
+    text-transform: none;
+}
+
+.splash-sub-title-name{
+    margin: 0;
+    /* white-space: pre-wrap; */
+}
+
+.splash-enter{
+    margin: auto;
+    width: fit-content;
+}
+
+.splash-enter-button ul {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    letter-spacing: 0.2em;
+    line-height: 1em;
+    margin: 0;
+    padding: 0;
+    text-transform: uppercase;
+}
+
+.splash-enter-button li {
+    list-style: none;
+}
+
+.splash-enter-button a {
+    background-color: transparent;
+    border: 2px solid #fff;
+    color: #fff;
+    display: block;
+    padding-bottom: 1em;
+    padding-left: 1.44em;
+    padding-right: 1.24em;
+    padding-top: 1em;
+    transition: all 250ms ease-in-out;
+}
+
+.splash-enter-button a:hover {
+    background-color: #fff;
+    color: black;
+}
+
+/** nav dropdown **/
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: black;
+    line-height: 2em;
+    min-width: 190px;
+    text-align: left;
+    z-index: 1100;
+}
+
+.dropdown-content ul {
+    padding: 18px 20px;
+}
+
+.dropdown-content li {
+    margin: 0 !important;
+}
+
+.dropdown-content a {
+    color: white !important;
+    font-size: 11px !important;
+    text-align: left;
+    overflow: hidden;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .triangle-up {
+    display: block;
+}
+
+.dropdown-wrapper {
+    padding-top: 4px;
+    padding-left: 10px;
+}
+
+.triangle-up {
+    display: none;
+    margin-left: 0px;
+	width: 0;
+	height: 0;
+	border-left: 0px solid transparent;
+	border-right: 10px solid transparent;
+	border-bottom: 10px solid black;
+}
+
+/* about */
+
+.canvas {
+    padding: 50px;
+}
+
+.headerWrapper {
+    z-index: 1000;
+    left: 0;
+    right: 0;
+    position: static;
+}
+
+#header {
+    padding: 0 0 100px 0;
+}
+
+.wrapper {
+    display: table;
+    width: 100%;
+}
+
+#logo {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.logo-text {
+    margin-top: -0.3em;
+    margin-bottom: 0;
+}
+
+.logo-text a {
+    font-family: Julius Sans One;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    text-transform: uppercase;
+    line-height: 1em;
+    display: inline-block;
+    color: #111;
+}
+
+.logo-subtitle {
+    font-family: Open Sans;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 300;
+    letter-spacing: 7.5px;
+    text-transform: uppercase;
+    line-height: 2.3em;
+    margin: 0;
+    color: #111;
+}
+
+#topNav {
+    display: table-cell;
+    vertical-align: top;
+    text-align: right;
+    opacity: 1;
+}
+
+.main-nav {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.nav-wrapper {
+    display: block;
+}
+
+nav ul, nav ol {
+    list-style: none;
+    list-style-image: none;
+    margin: 0;
+    padding: 0;
+}
+
+.main-nav ul {
+    display: inline-block;
+    margin: 0;
+    margin-top: -0.35em;
+    font-size: 13px;
+}
+
+.main-nav ul li {
+    margin-left: 20px;
+    margin-bottom: 10px;
+    position: relative;
+    display: inline-block;
+}
+
+.main-nav ul li a {
+    color: #111;
+    font-family: futura-pt;
+    font-size: 13px;
+    font-weight: 400;
+    font-style: normal;
+    text-transform: none;
+    letter-spacing: 1px;
+    line-height: 1.5em;
+    cursor: pointer;
+}
+
+.main-nav ul li a:hover span {
+    border-bottom-color: #111;
+}
+
+.main-nav ul li a span {
+    border-bottom: 1px solid transparent;
+    transition: color 0.3s, border-bottom-color 0.3s;
+}
+
+.main-nav ul li.current a span{
+    border-bottom: 1px solid #111;
+}
+
+.dropdown .menu-link:hover {
+    border-bottom: 1px solid #111;
+}
+
+.plus {
+    border-bottom: none !important;
+}
+
+.about-wrapper {
+    padding: 0 17px 17px 17px;
+}
+
+.about-name {
+    margin-bottom: 0;
+    font: heavy;
+}
+
+.about-spacer {
+    padding: 17px;
+}
+
+.about-spacer-content {
+    padding-bottom: 2.44444%;
+    visibility: hidden;
+    position: relative !important;
+    display: block;
+}
+
+.about-flex {
+    display: flex;
+    flex-direction: row;
+    width: auto !important;
+}
+
+.about-left {
+    flex: 55%;
+}
+
+.about-right { 
+    flex: 45%;
+}
+
+.about-info {
+    padding: 17px;
+}
+
+.text-spacer {
+    padding: 17px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+.text-spacer-content {
+    visibility: hidden;
+    position: relative !important;
+    display: block;
+}
+
+.about-info a {
+    text-decoration: underline;
+}
+
+.about-info a:hover {
+    opacity: 40%;
+}
+
+.about-picture-wrapper {
+    padding: 17px;
+}
+
+.about-picture {
+    max-height: 100%;
+    max-width: 100%;
+}
+
+.page-wrapper {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 768px) {
+    .main-nav {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 769px) {
+    .mobile-nav {
+        display: none;
+    }
+}
+
+.hamburger1, .hamburger2, .hamburger3 {
+    width: 24px;
+    height: 3px;
+    background-color: #111;
+    margin-top: 5px;
+    margin-left: auto;
+    margin-bottom: 5px;
+    transition: 0.4s;
+}
+
+.hamburger-menu {
+    cursor: pointer;
+    display: inline-block;
+    opacity: 1;
+    position: fixed;
+    z-index: 11000;
+}
+
+.mobile-menu {
+    background-color: #fbfbfb;
+    padding: 15px;
+    display: block;
+    z-index: 1000;
+    position: fixed;
+    bottom: 0;
+    top: 0;
+    right: 0;
+    left: 0;
+    overflow-y: scroll;
+    transform: translate3d(100%, 0,0);
+    transition: transform .2s ease-in;
+}
+
+.change-menu {
+    transform: translate3d(0,0,0);
+}
+
+.change .hamburger1 {
+    transform: rotate(-45deg) translate(-8px, 3px);
+}
+
+.change .hamburger2 {
+    opacity: 0;
+}
+
+.change .hamburger3 {
+    transform: rotate(45deg) translate(-8px, -4px);
+}
