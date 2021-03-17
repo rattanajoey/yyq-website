@@ -192,7 +192,7 @@ li {
     line-height: 2em;
     min-width: 190px;
     text-align: left;
-    z-index: 1100;
+    z-index: 3;
 }
 
 .dropdown-content ul {
@@ -240,10 +240,10 @@ li {
 }
 
 .headerWrapper {
-    z-index: 1000;
+    z-index: 2;
     left: 0;
     right: 0;
-    position: static;
+    position: sticky;
 }
 
 #header {
@@ -258,6 +258,7 @@ li {
 #logo {
     display: table-cell;
     vertical-align: middle;
+    opacity: 1;
 }
 
 .logo-text {
@@ -463,6 +464,9 @@ nav ul, nav ol {
     .mobile-nav {
         display: none;
     }
+    .about-picture-mobile {
+        display: none;
+    }
 }
 
 .hamburger1, .hamburger2, .hamburger3 {
@@ -480,14 +484,14 @@ nav ul, nav ol {
     display: inline-block;
     opacity: 1;
     position: fixed;
-    z-index: 11000;
+    z-index: 5;
 }
 
 .mobile-menu {
     background-color: #fbfbfb;
     padding: 60px;
     display: block;
-    z-index: 1000;
+    z-index: 4;
     position: fixed;
     bottom: 0;
     top: 0;
@@ -531,4 +535,125 @@ nav ul, nav ol {
 
 #mobPlus {
     margin: 0 5px;
+}
+
+/** Filmography **/
+
+/** header bar background not used currently **/
+/* .headerBar {
+    position: absolute;
+    top: 0%;
+    left: 0;
+    width: 100%;
+    height: 140px;
+    background-color: #111;
+    opacity: 50%;
+} */
+
+.slideshow {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.mySlides {
+    max-width: 100%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: ease-in-out;
+}
+
+.white-text {
+    color: #fff !important;
+}
+
+.main-nav ul li a:hover .white-text {
+    border-bottom-color: #fff !important;
+}
+
+.main-nav ul li a .white-text {
+    border-bottom: 1px solid transparent;
+    transition: color 0.3s, border-bottom-color 0.3s;
+}
+
+.main-nav ul li.current a .white-text{
+    border-bottom: 1px solid #fff !important;
+}
+
+.dropdown .menu-link:hover .white-text{
+    border-bottom: 1px solid #fff !important;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 60%;
+  width: auto;
+  padding: 16px 100px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+
+.changeFilmography .hamburger1 {
+    transform: rotate(-45deg) translate(-8px, 3px);
+    background-color: black !important;
+}
+
+.changeFilmography .hamburger2 {
+    opacity: 0;
+}
+
+.changeFilmography .hamburger3 {
+    transform: rotate(45deg) translate(-8px, -4px);
+    background-color: black !important;
+}
+
+@media screen and (max-width: 768px) {
+    .prev, .next {
+        padding: 16px 50px;
+    }
+}
+
+.collection-detail-wrapper {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    margin: 50px;
+    width: 60%;
+    visibility: hidden;
+}
+
+.collection-detail-wrapper a {
+    letter-spacing: 0.6em;
+    background-color: #111;
+    color: #fff;
+    font-family: futura-pt;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 13px;
+    white-space: nowrap;
+    line-height: 1.2em;
+    padding: 12px 20px;
+}
+
+.collection-detail-wrapper span {
+    text-transform: uppercase;
+}
+
+.folder-title, .folder-separator {
+    opacity: 50%;
 }
