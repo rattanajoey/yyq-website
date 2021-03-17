@@ -657,3 +657,40 @@ nav ul, nav ol {
 .folder-title, .folder-separator {
     opacity: 50%;
 }
+
+/** narrative short **/
+
+.flexbox {
+    display: flex;
+    flex-direction: column;
+}
+
+.video-holder {
+    height: auto;
+    padding: 0 17px 17px 17px;
+}
+
+.film-info {
+    display: flex;
+    flex-direction: column;
+    padding: 17px;
+}
+
+.film-info p {
+    margin: 0 0 1.6em;
+}
+
+.film-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.film-row-column {
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+}
+
+.film-row-title {
+    color: #8ECAE6;
+}
