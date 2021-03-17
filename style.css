@@ -663,17 +663,32 @@ nav ul, nav ol {
 .flexbox {
     display: flex;
     flex-direction: column;
+    position: relative;
 }
 
 .video-holder {
     height: auto;
-    padding: 0 17px 17px 17px;
+    position: relative;
+    overflow: hidden;
+    display:flex;
+}
+
+.video-thumbnail {
+    max-width: 100%;
+    transition: visibility 500ms, opacity 500ms;
+    z-index: 1;
+}
+
+.vimeo {
+    position: absolute;
+    height: 100%;
 }
 
 .film-info {
     display: flex;
     flex-direction: column;
     padding: 17px;
+    padding-top: 25px;
 }
 
 .film-info p {
@@ -693,4 +708,22 @@ nav ul, nav ol {
 
 .film-row-title {
     color: #8ECAE6;
+}
+
+.picture-holder {
+    display: flex;
+}
+
+.movie-picture {
+    max-width: 100%;
+    height: auto;
+}
+
+@media screen and (max-width: 425px) {
+    .crew {
+        margin: 14px 0 !important;
+    }
+    .film-row {
+        flex-direction: column !important;
+    }
 }
