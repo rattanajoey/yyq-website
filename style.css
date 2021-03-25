@@ -338,21 +338,34 @@ nav ul, nav ol {
     cursor: pointer;
 }
 
-.main-nav ul li a:hover span {
+.nav-text:hover span {
     border-bottom-color: #111;
 }
 
-.main-nav ul li a span {
+.nav-text span {
     border-bottom: 1px solid transparent;
     transition: color 0.3s, border-bottom-color 0.3s;
 }
 
-.main-nav ul li.current a span{
+.current .nav-text span{
     border-bottom: 1px solid #111;
 }
 
 .dropdown .menu-link:hover {
     border-bottom: 1px solid #111;
+}
+
+.dropdown-nav-text span {
+    border-bottom: 1px solid transparent;
+    transition: color 0.3s, border-bottom-color 0.3s;
+}
+
+.dropdown-nav-text:hover span {
+    border-bottom: 1px solid #fff;
+}
+
+.drop-current span {
+    border-bottom: 1px solid #fff;
 }
 
 .plus {
