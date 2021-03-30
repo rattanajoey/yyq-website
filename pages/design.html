@@ -11,14 +11,15 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
 </head>
-<body style="margin: 0; height: 100%; overflow: hidden;">
+<body class="design-body" style="margin: 0; height: 100%; overflow: hidden;">
+    <div id="white-background">&nbsp;</div>
     <div class="canvas" style="margin:0; height: 100%; ">
         <!-- header bar background not used currently -->
         <!-- <div class="headerBar">
         </div> -->
         <div class="headerWrapper">
             <header id="header">
-                <div class="wrapper">
+                <div class="wrapper design-page-wrapper" onmouseover=opacity(this) onmouseout=opacityout(this)>
                     <div id="logo" data-content-field="site-title">
                         <h1 class="logo-text">
                             <a href="/" data-shrink-original-size="30" style="letter-spacing: 0.2em;">
@@ -40,7 +41,7 @@
                                             </span>
                                         </a>
                                     </li>
-                                    <li class="splash-page-collection current">
+                                    <li class="splash-page-collection">
                                         <a class="nav-text" href="/pages/filmography.html">
                                             <div class="dropdown">
                                                 <span class="plus">+</span>
@@ -77,7 +78,7 @@
                                             </div>
                                         </a>
                                     </li>
-                                    <li class="splash-page-collection">
+                                    <li class="splash-page-collection current">
                                         <a class="nav-text" href="/pages/design.html">
                                             <div class="dropdown">
                                                 <span class="plus">+</span>
@@ -243,39 +244,39 @@
         </div>
         <div class="slideshow">
             <a href="/pages/film/narrative.html">
-                <img class="mySlides" src="/images/fort_irwin_cover.jpg" id="slideImg">
+                <img class="mySlides" src="/images/americanpsycho.jpg" id="slideImg">
             </a>
             <div class="collection-detail-wrapper mySlideTitles">
                 <a href="/pages/film/narrative.html">
-                    <span class="folder-title">FILMOGRAPHY</span>
+                    <span class="folder-title">Design</span>
                     <span class="folder-separator">&nbsp;/&nbsp;</span>
-                    <span class="collection-title">Narrative Short</span>
+                    <span class="collection-title">Booklet</span>
                 </a>
             </div>      
             <a href="/pages/film/experiment.html">
-                <img class="mySlides" src="/images/ec_cover.jpg" id="slideImg">
+                <img class="mySlides" src="/images/wonderbridge.jpg" id="slideImg">
             </a>
             <div class="collection-detail-wrapper mySlideTitles">
                 <a href="/pages/film/experiment.html">
-                    <span class="folder-title">FILMOGRAPHY</span>
+                    <span class="folder-title">Design</span>
                     <span class="folder-separator">&nbsp;/&nbsp;</span>
-                    <span class="collection-title">Experimental Cinema</span>
+                    <span class="collection-title">Graphic</span>
                 </a>
             </div>  
             <a href="/pages/film/documentary.html">
-                <img class="mySlides" src="/images/slide_fwe.png" id="slideImg">
+                <img class="mySlides" src="/images/gamewheel.jpg" id="slideImg">
             </a>
             <div class="collection-detail-wrapper mySlideTitles">
                 <a href="/pages/film/documentary.html">
-                    <span class="folder-title">FILMOGRAPHY</span>
+                    <span class="folder-title">Design</span>
                     <span class="folder-separator">&nbsp;/&nbsp;</span>
-                    <span class="collection-title">Documentary</span>
+                    <span class="collection-title">Interactive</span>
                 </a>
             </div>  
         </div>
     </div>
-    <a class="prev" onclick="plusSlides(-1)">❮</a>
-    <a class="next" onclick="plusSlides(1)">❯</a>
+    <a class="prev pointer" onclick="plusSlides(-1)">❮</a>
+    <a class="next pointer" onclick="plusSlides(1)">❯</a>
     <script>
         var myIndex = 0;
         function plusSlides(n) {
@@ -315,6 +316,12 @@
         function openMenu(x) {
             document.getElementById('mobMenu').classList.toggle("change-menu");
             x.classList.toggle("changeFilmography");
+        }
+        function opacity(x) {
+            document.getElementById("white-background").style.opacity = "40%";
+        }
+        function opacityout(x) {
+            document.getElementById("white-background").style.opacity = "0%";
         }
     </script>  
 </body>
