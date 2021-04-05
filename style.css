@@ -760,3 +760,48 @@ nav ul, nav ol {
     opacity: 0%;
     z-index: 1;
 }
+
+/** design pages **/
+
+.booklet-info {
+    padding: 17px;
+}
+
+.booklet-pictures {
+    padding: 17px;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    max-width: 50%;
+    justify-content: space-between;
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.booklet-image {
+    max-width: 97%;
+}
+
+.psycho {
+    max-width: 100%;
+}
+
+.booklet-image-psycho {
+    width: 97%;
+    max-height: 95%;
+}
+
+.booklet-right-col {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.booklet-left-col {
+    display: flex;
+}
