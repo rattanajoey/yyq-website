@@ -239,11 +239,140 @@
             </nav>
         </div>
     </div>
+    <section>
+        <div class="slideshow-gold-fish" id="goldfish-main">
+            <div class="slides" onmouseover="opacity(this)" onmouseout=opacityout(this)>
+                <img class="photoSlides" src="/images/goldfish1.jfif" id="slideImg">
+                <div class="plus-container" id="change-opacity" onclick="modalOpen(this)">
+                    <a class="plus-resize">+</a>
+                </div>
+                <div class="image-description">
+                    <h3 style="margin-top: 15px;">Gold Fish</h3>
+                    <p>2016, Art photography</p>
+                </div>
+            </div>
+            <div class="slides" onmouseover="opacity(this)" onmouseout=opacityout(this)>
+                <img class="photoSlides" src="/images/goldfish2.jfif" id="slideImg">
+                <div class="plus-container" id="change-opacity" onclick="modalOpen(this)">
+                    <a class="plus-resize">+</a>
+                </div>
+                <div class="image-description">
+                    <p style="white-space: normal;">Photography is about perspectives, it’s kind of a demonstration of how people’s perception shapes the reality. Although many news photographers claim their photographs represent the undistorted truth, in actuality, plenty of manipulations goes into the production and publication of a photograph.</p>
+                </div>
+            </div>
+            <div class="slides" onmouseover="opacity(this)" onmouseout=opacityout(this)>
+                <img class="photoSlides" src="/images/goldfish3.jfif" id="slideImg">
+                <div class="plus-container" id="change-opacity" onclick="modalOpen(this)">
+                    <a class="plus-resize">+</a>
+                </div>
+                <div class="image-description">
+                <p style="white-space: normal;">Another type of manipulation occurs during the picture-taking process. In creating a photograph, the photographer chooses the subject matter, composes the scene, and uses filters and other tools to change the nature of the photograph and the subject itself.</p>
+                </div>
+            </div>
+            <div class="slides" onmouseover="opacity(this)" onmouseout=opacityout(this)>
+                <img class="photoSlides" src="/images/goldfish4.jfif" id="slideImg">
+                <div class="plus-container" id="change-opacity" onclick="modalOpen(this)">
+                    <a class="plus-resize">+</a>
+                </div>
+                <div class="image-description">
+                <p style="white-space: normal;">Here, the goldfish is that object or the model in portrait photography. It’s not that important what its original identity is, or whether it’s dead or alive, it is intensionally put into different situations and containers as the photographer’s own preconceptions. </p>
+                </div>
+            </div>
+            <div class="slides" onmouseover="opacity(this)" onmouseout=opacityout(this)>
+                <img class="photoSlides" src="/images/goldfish5.jfif" id="slideImg">
+                <div class="plus-container" id="change-opacity" onclick="modalOpen(this)">
+                    <a class="plus-resize">+</a>
+                </div>
+                <div class="image-description">
+                <p style="white-space: normal;">A photograph is shaped more by the person behind the camera than by what is in front of it.</p>
+                </div>
+            </div>
+        </div>
+        <div class="slideshow-gold-fish-modal" id="goldfish-modal">
+            <div class="modal-container">
+                <div class="x-button-container" id="modal-close" onclick="modalClose(this)"><a class="x-button">X</a></div>
+                <div class="slides-modal">
+                    <img class="photoSlides-modal" src="/images/goldfish1.jfif" id="slideImg">
+                </div>
+                <div class="slides-modal">
+                    <img class="photoSlides-modal" src="/images/goldfish2.jfif" id="slideImg">
+                </div>
+                <div class="slides-modal">
+                    <img class="photoSlides-modal" src="/images/goldfish3.jfif" id="slideImg">
+                </div>
+                <div class="slides-modal">
+                    <img class="photoSlides-modal" src="/images/goldfish4.jfif" id="slideImg">
+                </div>
+                <div class="slides-modal">
+                    <img class="photoSlides-modal" src="/images/goldfish5.jfif" id="slideImg">
+                </div>
+            </div>
+        </div>
+    </section>
+    <a class="prev pointer" style="top: 50%; z-index: 3;" onclick="moveSlides(-1)">❮</a>
+    <a class="next pointer" style="top: 50%; z-index: 3;" onclick="moveSlides(1)">❯</a>
     <script>
+        var slideIndex = 1;
+        showSlides(1);
+        function moveSlides(n) {
+            showSlides(slideIndex += n);
+            if (n<1){
+                var slides = document.getElementsByClassName("slides");
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.opacity = "100%";
+                }
+            }
+        }
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("slides");
+            var slidesModal = document.getElementsByClassName("slides-modal");
+            if (n > slides.length) {
+                slideIndex = 1;
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.transform = "none";
+                    slides[i].style.opacity = "100%";
+                    slidesModal[i].style.transform = "none";
+                }
+            }
+            if (n < 1) {
+                slideIndex = slides.length;
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.transform = "none";
+                    slides[i].style.opacity = "100%";
+                    slidesModal[i].style.transform = "none";
+                }
+            }
+            for (i = 0; i < slides.length; i++) {
+                    var position = (slideIndex-1)*100;
+                    slides[i].style.transform = "translate(-"+position+"%)";
+                    slidesModal[i].style.transform = "translate(-"+position+"%)";
+                }
+            if (slideIndex>1){
+                slides[slideIndex-2].style.opacity = "0%";
+            }
+        }
+        var pluses = document.getElementsByClassName("plus-container");
+        function opacity(x) {
+            pluses[slideIndex-1].style.opacity = "100%";
+        }
+        function opacityout(x) {
+            pluses[slideIndex-1].style.opacity = "0%";
+        }
+        function modalOpen(x){
+            document.getElementById("goldfish-main").style.display = "none";
+            document.getElementById("goldfish-modal").style.display = "block";
+            document.getElementById("modal-close").style.display = "flex";
+        }
+        function modalClose(x){
+            document.getElementById("goldfish-main").style.display = "block";
+            document.getElementById("goldfish-modal").style.display = "none";
+            document.getElementById("modal-close").style.display = "none";
+        }
         function openMenu(x) {
             document.getElementById('mobMenu').classList.toggle("change-menu");
-            x.classList.toggle("change");
+            x.classList.toggle("changeFilmography");
         }
-    </script>
+    </script>  
  </body>
 </html>
