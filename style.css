@@ -919,6 +919,10 @@ nav ul, nav ol {
 }
 
 .photoSlides-modal {
+    align-self: center;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
 }
 
 .x-button-container {
@@ -938,4 +942,51 @@ nav ul, nav ol {
     cursor: pointer;
     font-size: 18px;
     margin: auto;
+}
+
+/** On the Road **/
+
+.col-12 {
+    width: 100%;
+}
+
+.date-location-wrapper {
+    padding: 0 17px 17px 17px;
+}
+
+.date-location {
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    font-family: proxima-nova;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.6em;
+    letter-spacing: 0.5px;
+    margin: 0;
+}
+
+.images-wrapper {
+    padding: 17px;
+}
+
+.otr-col {
+    float: left;
+    width: 25%;
+}
+
+.otr-img-wrapper {
+    margin-right: 6px;
+    margin-bottom: 6px;
+}
+
+.otr-img {
+    display: block;
+    max-height: 100%;
+    max-width: 100%;
+    opacity: 0.8;
+}
+
+.otr-img:hover {
+    opacity: 1;
 }
