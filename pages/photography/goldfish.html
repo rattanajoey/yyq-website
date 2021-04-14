@@ -239,7 +239,7 @@
             </nav>
         </div>
     </div>
-    <section>
+    <div class="table-wrapper">
         <div class="slideshow-gold-fish" id="goldfish-main">
             <div class="slides" onmouseover="opacity(this)" onmouseout=opacityout(this)>
                 <img class="photoSlides" src="/images/goldfish1.jfif" id="slideImg">
@@ -308,9 +308,9 @@
                 </div>
             </div>
         </div>
-    </section>
-    <a class="prev pointer" style="z-index: 3;" onclick="moveSlides(-1)">❮</a>
-    <a class="next pointer" style="z-index: 3;" onclick="moveSlides(1)">❯</a>
+    </div>
+    <a class="prev pointer gfPointer" style="z-index: 3;" onclick="moveSlides(-1)">❮</a>
+    <a class="next pointer gfPointer" style="z-index: 3;" onclick="moveSlides(1)">❯</a>
     <script>
         var slideIndex = 1;
         showSlides(1);

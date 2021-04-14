@@ -824,48 +824,79 @@ nav ul, nav ol {
 
 /** photography **/
 
+/** Goldfish **/
+
 .slideshow-gold-fish {
     white-space:nowrap;
-    position: absolute;
-    padding: 0 50px 50px 50px;
-    max-width: 100%;
-    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.slides {
+    display: inline-table;
+    transition: all 0.5s ease;
+    width: 100%;
+}
+
+.photoSlides {
+    transition: ease-in-out;
+    width: 100%;
+}
+
+.gfPointer {
+    top: 60%;
 }
 
 @media screen and (min-width: 768px) {
-    .slideshow-gold-fish {
-        min-height: 600px;
+    .image-description {
+        margin-left: 10px;
     }
- }
-
-@media screen and (max-width: 768px) {
-    .slideshow-gold-fish {
-        padding: 0;
-    }
- }
-
-.slides {
-    display: inline-grid;
-    height: 500px;
-    max-width: 666px;
-    transition: all 0.5s ease;
-    padding-left: 15px;
-}
-
-@media screen and (max-width: 768px) {
     .slides {
-        padding-left: 0px;
+        width: 33%;
+    }
+    .photoSlides {
+        max-height: 600px;
+        max-width: 586px;
+        padding: 10px;
+        transition: ease-in-out;
     }
  }
 
-.photoSlides {
-    max-height: 500px;
-    transition: ease-in-out;
+/** souvenirs **/
+
+.table-wrapper {
+    overflow: hidden;
+    width: 100%;
 }
 
-@media screen and (max-width: 768px) {
-    .photoSlides {
-        max-width: 100%;
+.slideshow-Souvenirs {
+    white-space:nowrap;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.slidesSouvenirs {
+    display: inline-table;
+    transition: all 0.5s ease;
+    width: 100%;
+}
+
+.photoSlidesSouvenirs {
+    transition: ease-in-out;
+    width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+    .slidesSouvenirs {
+        width: auto;
+    }
+    .photoSlidesSouvenirs {
+        max-height: 600px;
+        max-width: 586px;
+        padding: 10px;
+        transition: ease-in-out;
     }
  }
 
@@ -876,6 +907,7 @@ nav ul, nav ol {
 .plus-container {
     position: absolute;
     right: 10px;
+    top: 10px;
     opacity: 0%;;
 }
 
