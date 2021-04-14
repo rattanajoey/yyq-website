@@ -885,7 +885,6 @@ nav ul, nav ol {
 
 .photoSlidesSouvenirs {
     transition: ease-in-out;
-    width: 100%;
 }
 
 @media screen and (min-width: 768px) {
