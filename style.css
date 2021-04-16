@@ -243,6 +243,7 @@ li {
     .canvas {
         padding-bottom: 0;
         padding-left: 10px;
+        padding-right: 10px;
     }
  }
 
@@ -503,6 +504,12 @@ nav ul, nav ol {
     opacity: 1;
     position: fixed;
     z-index: 5;
+}
+
+@media screen and (max-width: 768px) {
+    .hamburger-menu {
+        right: 5%;
+    }
 }
 
 .mobile-menu {
@@ -978,6 +985,10 @@ nav ul, nav ol {
     margin: auto;
 }
 
+.Spointer {
+    top: 60%;
+}
+
 /** On the Road **/
 
 .col-12 {
@@ -1009,6 +1020,16 @@ nav ul, nav ol {
     width: 25%;
 }
 
+.otr-col-16 {
+    float: left;
+    width: 16.6%;
+}
+
+.otr-col-33 {
+    float: left;
+    width: 33%;
+}
+
 .otr-img-wrapper {
     margin-right: 6px;
     margin-bottom: 6px;
@@ -1019,8 +1040,37 @@ nav ul, nav ol {
     max-height: 100%;
     max-width: 100%;
     opacity: 0.8;
+    object-fit: cover;
+    height: 104px;
+    width: 155px;
+}
+
+.otr-img-16 {
+    display: block;
+    max-height: 100%;
+    max-width: 100%;
+    opacity: 0.8;
+    object-fit: cover;
+    height: 70px;
+    width: 100px;
+}
+
+@media screen and (min-width: 768px) {
+    .otr-img {
+        height: 206px;
+        width: 310px;
+    }
+    
+    .otr-img-16 {
+        height: 139px;
+        width: 160px;
+    }
 }
 
 .otr-img:hover {
     opacity: 1;
+}
+
+.otr-row {
+    display: flex;
 }
