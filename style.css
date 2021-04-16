@@ -841,6 +841,7 @@ nav ul, nav ol {
 
 .photoSlides {
     transition: ease-in-out;
+    width: 100%;
 }
 
 .gfPointer {
@@ -859,6 +860,7 @@ nav ul, nav ol {
         max-width: 586px;
         padding: 10px;
         transition: ease-in-out;
+        width: auto;
     }
  }
 
@@ -884,6 +886,7 @@ nav ul, nav ol {
 
 .photoSlidesSouvenirs {
     transition: ease-in-out;
+    width: 100%;
 }
 
 @media screen and (min-width: 768px) {
@@ -895,6 +898,7 @@ nav ul, nav ol {
         max-width: 586px;
         padding: 10px;
         transition: ease-in-out;
+        width: auto;
     }
  }
 
