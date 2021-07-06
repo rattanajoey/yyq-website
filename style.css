@@ -1074,3 +1074,45 @@ nav ul, nav ol {
 .otr-row {
     display: flex;
 }
+
+/** blog **/
+
+.blogContent {
+    float: left;
+    max-width: 100%;
+    padding: 0 50px 0 0;
+}
+
+.blogArticle {
+    padding-bottom: 100px;
+}
+
+.entry-title {
+    margin-top: 0;
+    margin-bottom: 1em;
+}
+
+.entry-title a {
+    color: #5a86ba;
+}
+
+.blockContentWrapper {
+    padding: 0 17px 0 17px;
+}
+
+.image-block {
+    padding: 17px;
+}
+
+.thumb-image {
+    max-width: 100%;
+}
+
+.image-caption-wrapper {
+    padding-top: 18px;
+}
+
+.sideBarWrapper {
+    float: left;
+    width: 220px;
+}
