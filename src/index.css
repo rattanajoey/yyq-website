@@ -351,6 +351,10 @@ nav ol {
   cursor: pointer;
 }
 
+.nav-text {
+  cursor: pointer;
+}
+
 .nav-text:hover span {
   border-bottom-color: #111;
 }
@@ -368,12 +372,12 @@ nav ol {
   border-bottom: 1px solid #111;
 }
 
-.dropdown-nav-text span {
+.dropdown-nav-text {
   border-bottom: 1px solid transparent;
   transition: color 0.3s, border-bottom-color 0.3s;
 }
 
-.dropdown-nav-text:hover span {
+.dropdown-nav-text:hover {
   border-bottom: 1px solid #fff;
 }
 
@@ -383,6 +387,7 @@ nav ol {
 
 .plus {
   border-bottom: none !important;
+  cursor: pointer;
 }
 
 .about-wrapper {
