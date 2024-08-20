@@ -1,918 +1,1107 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>On the Road --- THIS IS WATER</title>
-    <link rel="stylesheet" href="/style.css">
-    <link rel="stylesheet" href="https://use.typekit.net/hwy7sfn.css">
-    <link href="https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
-</head>
-<body>
+    <link rel="stylesheet" href="/style.css" />
+    <link rel="stylesheet" href="https://use.typekit.net/hwy7sfn.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
     <div class="canvas" style="height: 100%">
-        <div class="headerWrapper">
-            <header id="header">
-                <div class="wrapper">
-                    <div id="logo" data-content-field="site-title">
-                        <h1 class="logo-text">
-                            <a href="/" data-shrink-original-size="30" style="letter-spacing: 0.2em;">
-                                THIS IS WATER
-                            </a>
-                        </h1>
-                        <h2 class="logo-subtitle">
-                            YIQING YU
-                        </h2>
-                    </div>
-                    <div id="topNav">
-                        <nav class="main-nav" data-content-field="navigation">
-                            <div class="nav-wrapper">
-                                <ul class="cf">
-                                    <li class="splash-page-collection">
-                                        <a class="nav-text" href="/">
-                                            <span>
-                                                COVER
-                                            </span>
-                                        </a>
-                                    </li>
-                                    <li class="splash-page-collection">
-                                        <a class="nav-text" href="/pages/nav_cover/filmography.html">
-                                            <div class="dropdown">
-                                                <span class="plus">+</span>
-                                                <span>
-                                                    FILMOGRAPHY
-                                                </span>
-                                                <div class="dropdown-wrapper">
-                                                    <div class="dropdown-content">
-                                                        <ul>
-                                                            <li>
-                                                                <a class="dropdown-nav-text" href="/pages/film/narrative.html">
-                                                                    <span>
-                                                                        Narrative Short
-                                                                    </span>
-                                                                </a>
-                                                            </li>
-                                                            <li>
-                                                                <a class="dropdown-nav-text" href="/pages/film/experiment.html">
-                                                                    <span>
-                                                                        Experimental Cinema
-                                                                    </span>
-                                                                </a>
-                                                            </li>
-                                                            <li>
-                                                                <a class="dropdown-nav-text" href="/pages/film/documentary.html">
-                                                                    <span>
-                                                                        Documentary 
-                                                                    </span>
-                                                                </a>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </li>
-                                    <li class="splash-page-collection">
-                                        <a class="nav-text" href="/pages/nav_cover/design.html">
-                                            <div class="dropdown">
-                                                <span class="plus">+</span>
-                                                <span>
-                                                    DESIGN
-                                                </span>
-                                                <div class="dropdown-wrapper">
-                                                    <div class="dropdown-content">
-                                                        <ul>
-                                                            <li>
-                                                                <a class="dropdown-nav-text" href="/pages/design/booklet.html">
-                                                                    <span>
-                                                                        Booklet
-                                                                    </span>
-                                                                </a>
-                                                            </li>
-                                                            <br>
-                                                            <li>
-                                                                <a class="dropdown-nav-text" href="/pages/design/graphic.html">
-                                                                    <span>
-                                                                        Graphic 
-                                                                    </span>
-                                                                </a>
-                                                            </li>
-                                                            <br>
-                                                            <li>
-                                                                <a class="dropdown-nav-text" href="/pages/design/interactive.html">
-                                                                    <span>
-                                                                        Interactive 
-                                                                    </span>
-                                                                </a>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </li>
-                                    <li class="splash-page-collection current">
-                                        <a class="nav-text" href="/pages/nav_cover/photography.html">
-                                            <div class="dropdown">
-                                                <span class="plus">+</span>
-                                                <span>
-                                                    PHOTOGRAPHY
-                                                </span>
-                                                <div class="dropdown-wrapper">
-                                                    <div class="dropdown-content">
-                                                        <ul>
-                                                            <li>
-                                                                <a class="dropdown-nav-text " href="/pages/photography/goldfish.html">
-                                                                    <span>
-                                                                        Gold Fish
-                                                                    </span>
-                                                                </a>
-                                                            </li>
-                                                            <br>
-                                                            <li>
-                                                                <a class="dropdown-nav-text " href="/pages/photography/souvenirs.html">
-                                                                    <span>
-                                                                        Souvenirs
-                                                                    </span>
-                                                                </a>
-                                                            </li>
-                                                            <br>
-                                                            <li>
-                                                                <a class="dropdown-nav-text drop-current" href="/pages/photography/ontheroad.html">
-                                                                    <span>
-                                                                        On The Road 
-                                                                    </span>
-                                                                </a>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </li>
-                                    <li class="splash-page-collection">
-                                        <a class="nav-text" href="/pages/blog.html">
-                                            <span>
-                                                ART BLOG
-                                            </span>
-                                        </a>
-                                    </li>
-                                    <li class="splash-page-collection">
-                                        <a class="nav-text" href="/pages/about.html">
-                                            <span>
-                                                About
-                                            </span>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </nav>
-                        <nav class="mobile-nav" data-content-field="navigation">
-                            <div class="hamburger-menu" onclick="openMenu(this)">
-                                <div class="hamburger1"></div>
-                                <div class="hamburger2"></div>
-                                <div class="hamburger3"></div>
-                            </div>
-                        </nav>
-                    </div>
-                </div>
-            </header>
-            <nav class="mobile-menu" id="mobMenu">
-                <ul>
-                    <li class="splash-page-collection" id="mobTabTitle">
-                        <a href="/index.html">COVER</a>
-                    </li>
-                    <li class="index-collection">
-                        <span class="plus" id="mobPlus">+</span>
-                        <a href="/pages/nav_cover/filmography.html">FILMOGRAPHY</a>
-                        <ul>
-                            <li class="page-collection" id="mobTab">
-                                <a href="/pages/film/narrative.html">Narrative Short</a>
-                            </li>
-                            <li class="page-collection" id="mobTab">
-                                <a href="/pages/film/experiment.html">Experimental Cinema</a>
-                            </li>
-                            <li class="page-collection" id="mobTab">
-                                <a href="/pages/film/documentary.html">Documentary</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="index-collection">
-                        <span class="plus" id="mobPlus">+</span>
-                        <a href="/pages/nav_cover/design.html">DESIGN</a>
-                        <ul>
-                            <li class="page-collection" id="mobTab">
-                                <a href="/pages/design/booklet.html">Booklet</a>
-                            </li>
-                            <li class="page-collection" id="mobTab">
-                                <a href="/pages/design/graphic.html">Graphic</a>
-                            </li>
-                            <li class="page-collection" id="mobTab">
-                                <a href="/pages/design/interactive.html">Interactive</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="index-collection">
-                        <span class="plus" id="mobPlus">+</span>
-                        <a href="/pages/nav_cover/photography.html">PHOTOGRAPHY</a>
-                        <ul>
-                            <li class="page-collection" id="mobTab">
-                                <a href="/pages/photography/goldfish.html">Gold Fish</a>
-                            </li>
-                            <li class="page-collection" id="mobTab">
-                                <a href="/pages/photography/souvenirs.html">Souvenirs</a>
-                            </li>
-                            <li class="page-collection" id="mobTab">
-                                <a href="/pages/photography/ontheroad.html">On the Road</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="blog-collection" id="mobTabTitle">
-                        <a href="/pages/blog.html">ART BLOG</a>
-                    </li>
-                    <li class="page-collection" id="mobTabTitle">
-                        <a href="/pages/about.html">About</a>
-                    </li>
-                </ul>
-            </nav>
+      <div id="header-container"></div>
+      <script src="/scripts/loadHeader.js"></script>
+      <div class="col-12">
+        <div class="date-location-wrapper">
+          <p class="date-location">
+            2018.6.10 - 2018.6.11 Yosemite National Park
+          </p>
         </div>
-        <div class="col-12">
-            <div class="date-location-wrapper">
-                <p class="date-location">2018.6.10 - 2018.6.11 Yosemite National Park</p>
+        <div class="images-wrapper" style="height: 100%">
+          <div class="otr-row">
+            <div class="otr-col">
+              <div class="otr-img-wrapper">
+                <img
+                  class="otr-img"
+                  src="/images/ontheroad/000051.jpeg"
+                  onclick="openImage(this);"
+                />
+              </div>
             </div>
-            <div class="images-wrapper" style="height: 100%;">
-                <div class="otr-row">
-                    <div class="otr-col">
-                        <div class="otr-img-wrapper">
-                            <img class="otr-img" src="/images/ontheroad/000051.jpeg" onclick="openImage(this);">
-                        </div>
-                    </div>
-                    <div class="otr-col">
-                        <div class="otr-img-wrapper">
-                            <img class="otr-img" src="/images/ontheroad/000037.jpeg" onclick="openImage(this);">
-                        </div>                    
-                    </div>
-                    <div class="otr-col">
-                        <div class="otr-img-wrapper">
-                            <img class="otr-img" src="/images/ontheroad/000075.jpeg" onclick="openImage(this);">
-                        </div>                    
-                    </div>
-                    <div class="otr-col">
-                        <div class="otr-img-wrapper">
-                            <img class="otr-img" src="/images/ontheroad/000058.jpeg" onclick="openImage(this);">
-                        </div>                    
-                    </div>
-                </div>
-                <div class="otr-row">
-                    <div class="otr-col">
-                        <div class="otr-img-wrapper">
-                            <img class="otr-img" src="/images/ontheroad/000089.jpeg" onclick="openImage(this);">
-                        </div>
-                    </div>
-                    <div class="otr-col">
-                        <div class="otr-img-wrapper">
-                            <img class="otr-img" src="/images/ontheroad/000024.jpeg" onclick="openImage(this);">
-                        </div>                    
-                    </div>
-                    <div class="otr-col">
-                        <div class="otr-img-wrapper">
-                            <img class="otr-img" src="/images/ontheroad/000084.jpeg" onclick="openImage(this);">
-                        </div>                    
-                    </div>
-                    <div class="otr-col">
-                        <div class="otr-img-wrapper">
-                            <img class="otr-img" src="/images/ontheroad/000064.jpeg" onclick="openImage(this);">
-                        </div>                    
-                    </div>
-                </div>
-                <div class="otr-row">
-                    <div class="otr-col">
-                        <div class="otr-img-wrapper">
-                            <img class="otr-img" src="/images/ontheroad/000059.jpeg" onclick="openImage(this);">
-                        </div>
-                    </div>
-                    <div class="otr-col">
-                        <div class="otr-img-wrapper">
-                            <img class="otr-img" src="/images/ontheroad/000062.jpeg" onclick="openImage(this);">
-                        </div>                    
-                    </div>
-                    <div class="otr-col">
-                        <div class="otr-img-wrapper">
-                            <img class="otr-img" src="/images/ontheroad/000044.jpeg" onclick="openImage(this);">
-                        </div>                    
-                    </div>
-                    <div class="otr-col">
-                        <div class="otr-img-wrapper">
-                            <img class="otr-img" src="/images/ontheroad/000048.jpeg" onclick="openImage(this);">
-                        </div>                    
-                    </div>
-                </div>
+            <div class="otr-col">
+              <div class="otr-img-wrapper">
+                <img
+                  class="otr-img"
+                  src="/images/ontheroad/000037.jpeg"
+                  onclick="openImage(this);"
+                />
+              </div>
             </div>
-            <div class="about-spacer">
-                <div class="about-spacer-content">
-                    &nbsp;
-                </div>
+            <div class="otr-col">
+              <div class="otr-img-wrapper">
+                <img
+                  class="otr-img"
+                  src="/images/ontheroad/000075.jpeg"
+                  onclick="openImage(this);"
+                />
+              </div>
             </div>
-            <div class="date-location-wrapper">
-                <p class="date-location">2017.12.22 - 2017.12.26  Seattle, Portland</p>
+            <div class="otr-col">
+              <div class="otr-img-wrapper">
+                <img
+                  class="otr-img"
+                  src="/images/ontheroad/000058.jpeg"
+                  onclick="openImage(this);"
+                />
+              </div>
             </div>
-            <div class="images-wrapper">
-                <div class="otr-row">
-                    <div class="otr-col">
-                        <div class="otr-img-wrapper">
-                            <img class="otr-img" src="/images/ontheroad/1.jpeg" onclick="openImage(this);">
-                        </div>
-                    </div>
-                    <div class="otr-col">
-                        <div class="otr-img-wrapper">
-                            <img class="otr-img" src="/images/ontheroad/3.jpeg" onclick="openImage(this);">
-                        </div>                    
-                    </div>
-                    <div class="otr-col">
-                        <div class="otr-img-wrapper">
-                            <img class="otr-img" src="/images/ontheroad/4.jpeg" onclick="openImage(this);">
-                        </div>                    
-                    </div>
-                    <div class="otr-col">
-                        <div class="otr-img-wrapper">
-                            <img class="otr-img" src="/images/ontheroad/5.jpeg" onclick="openImage(this);">
-                        </div>                    
-                    </div>
-                </div>
-                <div class="otr-row">
-                    <div class="otr-col">
-                        <div class="otr-img-wrapper">
-                            <img class="otr-img" src="/images/ontheroad/12.jpeg" onclick="openImage(this);">
-                        </div>
-                    </div>
-                    <div class="otr-col">
-                        <div class="otr-img-wrapper">
-                            <img class="otr-img" src="/images/ontheroad/8.jpeg" onclick="openImage(this);">
-                        </div>                    
-                    </div>
-                    <div class="otr-col">
-                        <div class="otr-img-wrapper">
-                            <img class="otr-img" src="/images/ontheroad/9.jpeg" onclick="openImage(this);">
-                        </div>                    
-                    </div>
-                    <div class="otr-col">
-                        <div class="otr-img-wrapper">
-                            <img class="otr-img" src="/images/ontheroad/7.jpeg" onclick="openImage(this);">
-                        </div>                    
-                    </div>
-                </div>
-                <div class="otr-row">
-                    <div class="otr-col">
-                        <div class="otr-img-wrapper">
-                            <img class="otr-img" src="/images/ontheroad/10.jpeg" onclick="openImage(this);">
-                        </div>
-                    </div>
-                    <div class="otr-col">
-                        <div class="otr-img-wrapper">
-                            <img class="otr-img" src="/images/ontheroad/11.jpeg" onclick="openImage(this);">
-                        </div>                    
-                    </div>
-                    <div class="otr-col">
-                        <div class="otr-img-wrapper">
-                            <img class="otr-img" src="/images/ontheroad/13.jpeg" onclick="openImage(this);">
-                        </div>                    
-                    </div>
-                    <div class="otr-col">
-                        <div class="otr-img-wrapper">
-                            <img class="otr-img" src="/images/ontheroad/14.jpeg" onclick="openImage(this);">
-                        </div>                    
-                    </div>
-                </div>
+          </div>
+          <div class="otr-row">
+            <div class="otr-col">
+              <div class="otr-img-wrapper">
+                <img
+                  class="otr-img"
+                  src="/images/ontheroad/000089.jpeg"
+                  onclick="openImage(this);"
+                />
+              </div>
             </div>
-            <div class="about-spacer">
-                <div class="about-spacer-content">
-                    &nbsp;
-                </div>
+            <div class="otr-col">
+              <div class="otr-img-wrapper">
+                <img
+                  class="otr-img"
+                  src="/images/ontheroad/000024.jpeg"
+                  onclick="openImage(this);"
+                />
+              </div>
             </div>
-            <div class="date-location-wrapper">
-                <p class="date-location">2017.5.19 - 2017.5.25  Ho Chi Minh, Mui Ne, Da Lat</p>
+            <div class="otr-col">
+              <div class="otr-img-wrapper">
+                <img
+                  class="otr-img"
+                  src="/images/ontheroad/000084.jpeg"
+                  onclick="openImage(this);"
+                />
+              </div>
             </div>
-            <div class="images-wrapper">
-                <div class="otr-row">
-                    <div class="otr-col-33">
-                        <div class="otr-img-wrapper">
-                            <img class="otr-img" src="/images/ontheroad/000004.jpeg" onclick="openImage(this);">
-                        </div>
-                    </div>
-                    <div class="otr-col-33">
-                        <div class="otr-img-wrapper">
-                            <img class="otr-img" src="/images/ontheroad/000028.jpeg" onclick="openImage(this);">
-                        </div>                    
-                    </div>
-                    <div class="otr-col-33">
-                        <div class="otr-img-wrapper">
-                            <img class="otr-img" src="/images/ontheroad/000019.jpeg" onclick="openImage(this);">
-                        </div>                    
-                    </div>
-                </div>
-                <div class="otr-row">
-                    <div class="otr-col-33">
-                        <div class="otr-img-wrapper">
-                            <img class="otr-img" src="/images/ontheroad/000020.jpeg" onclick="openImage(this);">
-                        </div>
-                    </div>
-                    <div class="otr-col-33">
-                        <div class="otr-img-wrapper">
-                            <img class="otr-img" src="/images/ontheroad/000003.jpeg" onclick="openImage(this);">
-                        </div>                    
-                    </div>
-                    <div class="otr-col-33">
-                        <div class="otr-img-wrapper">
-                            <img class="otr-img" src="/images/ontheroad/000027.jpeg" onclick="openImage(this);">
-                        </div>                    
-                    </div>
-                </div>
-                <div class="otr-row">
-                    <div class="otr-col-33">
-                        <div class="otr-img-wrapper">
-                            <img class="otr-img" src="/images/ontheroad/000030.jpeg" onclick="openImage(this);">
-                        </div>
-                    </div>
-                    <div class="otr-col-33">
-                        <div class="otr-img-wrapper">
-                            <img class="otr-img" src="/images/ontheroad/000031.jpeg" onclick="openImage(this);">
-                        </div>                    
-                    </div>
-                    <div class="otr-col-33">
-                        <div class="otr-img-wrapper">
-                            <img class="otr-img" src="/images/ontheroad/000030+(1).jpeg" onclick="openImage(this);">
-                        </div>                    
-                    </div>
-                </div>
-                <div class="otr-row">
-                    <div class="otr-col-33">
-                        <div class="otr-img-wrapper">
-                            <img class="otr-img" src="/images/ontheroad/000012.jpeg" onclick="openImage(this);">
-                        </div>
-                    </div>
-                    <div class="otr-col-33">
-                        <div class="otr-img-wrapper">
-                            <img class="otr-img" src="/images/ontheroad/000019+(1).jpeg" onclick="openImage(this);">
-                        </div>                    
-                    </div>
-                    <div class="otr-col-33">
-                        <div class="otr-img-wrapper">
-                            <img class="otr-img" src="/images/ontheroad/000030+(2).jpeg" onclick="openImage(this);">
-                        </div>                    
-                    </div>
-                </div>
-                <div class="otr-row">
-                    <div class="otr-col-33">
-                        <div class="otr-img-wrapper">
-                            <img class="otr-img" src="/images/ontheroad/000031+(1).jpeg" onclick="openImage(this);">
-                        </div>
-                    </div>
-                    <div class="otr-col-33">
-                        <div class="otr-img-wrapper">
-                            <img class="otr-img" src="/images/ontheroad/000032.jpeg" onclick="openImage(this);">
-                        </div>                    
-                    </div>
-                    <div class="otr-col-33">
-                        <div class="otr-img-wrapper">
-                            <img class="otr-img" src="/images/ontheroad/000033.jpeg" onclick="openImage(this);">
-                        </div>                    
-                    </div>
-                </div>
+            <div class="otr-col">
+              <div class="otr-img-wrapper">
+                <img
+                  class="otr-img"
+                  src="/images/ontheroad/000064.jpeg"
+                  onclick="openImage(this);"
+                />
+              </div>
             </div>
-            <div class="about-spacer">
-                <div class="about-spacer-content">
-                    &nbsp;
-                </div>
+          </div>
+          <div class="otr-row">
+            <div class="otr-col">
+              <div class="otr-img-wrapper">
+                <img
+                  class="otr-img"
+                  src="/images/ontheroad/000059.jpeg"
+                  onclick="openImage(this);"
+                />
+              </div>
             </div>
-            <div class="date-location-wrapper">
-                <p class="date-location">2016.5.20 - 2016.5.29  Lhasa, Tibet</p>
+            <div class="otr-col">
+              <div class="otr-img-wrapper">
+                <img
+                  class="otr-img"
+                  src="/images/ontheroad/000062.jpeg"
+                  onclick="openImage(this);"
+                />
+              </div>
             </div>
-            <div class="images-wrapper">
-                <div class="otr-row">
-                    <div class="otr-col-33">
-                        <div class="otr-img-wrapper">
-                            <img class="otr-img" src="/images/ontheroad/000039.jpeg" onclick="openImage(this);">
-                        </div>
-                    </div>
-                    <div class="otr-col-33">
-                        <div class="otr-img-wrapper">
-                            <img class="otr-img" src="/images/ontheroad/000035.jpeg" onclick="openImage(this);">
-                        </div>                    
-                    </div>
-                    <div class="otr-col-33">
-                        <div class="otr-img-wrapper">
-                            <img class="otr-img" src="/images/ontheroad/000033_1.jpeg" onclick="openImage(this);">
-                        </div>                    
-                    </div>
-                </div>
-                <div class="otr-row">
-                    <div class="otr-col-33">
-                        <div class="otr-img-wrapper">
-                            <img class="otr-img" src="/images/ontheroad/000029.jpeg" onclick="openImage(this);">
-                        </div>
-                    </div>
-                    <div class="otr-col-33">
-                        <div class="otr-img-wrapper">
-                            <img class="otr-img" src="/images/ontheroad/000028_1.jpeg" onclick="openImage(this);">
-                        </div>                    
-                    </div>
-                    <div class="otr-col-33">
-                        <div class="otr-img-wrapper">
-                            <img class="otr-img" src="/images/ontheroad/000026.jpeg" onclick="openImage(this);">
-                        </div>                    
-                    </div>
-                </div>
+            <div class="otr-col">
+              <div class="otr-img-wrapper">
+                <img
+                  class="otr-img"
+                  src="/images/ontheroad/000044.jpeg"
+                  onclick="openImage(this);"
+                />
+              </div>
             </div>
-            <div class="about-spacer">
-                <div class="about-spacer-content">
-                    &nbsp;
-                </div>
+            <div class="otr-col">
+              <div class="otr-img-wrapper">
+                <img
+                  class="otr-img"
+                  src="/images/ontheroad/000048.jpeg"
+                  onclick="openImage(this);"
+                />
+              </div>
             </div>
-            <div class="date-location-wrapper">
-                <p class="date-location">2016.3.23 - 2016.3.31  Moscow, Vladimir, Suzdal</p>
-            </div>
-            <div class="images-wrapper">
-                <div class="otr-row">
-                    <div class="otr-col-16">
-                        <div class="otr-img-wrapper">
-                            <img class="otr-img-16" src="/images/ontheroad/DSC_0077-2.jpeg" onclick="openImage(this);">
-                        </div>
-                    </div>
-                    <div class="otr-col-16">
-                        <div class="otr-img-wrapper">
-                            <img class="otr-img-16" src="/images/ontheroad/P3300265-2.jpeg" onclick="openImage(this);">
-                        </div>                    
-                    </div>
-                    <div class="otr-col-16">
-                        <div class="otr-img-wrapper">
-                            <img class="otr-img-16" src="/images/ontheroad/11.pic_hd.jpg" onclick="openImage(this);">
-                        </div>                    
-                    </div>
-                    <div class="otr-col-16">
-                        <div class="otr-img-wrapper">
-                            <img class="otr-img-16" src="/images/ontheroad/13.pic_hd.jpg" onclick="openImage(this);">
-                        </div>                    
-                    </div>
-                    <div class="otr-col-16">
-                        <div class="otr-img-wrapper">
-                            <img class="otr-img-16" src="/images/ontheroad/10.pic_hd.jpg" onclick="openImage(this);">
-                        </div>                    
-                    </div>
-                    <div class="otr-col-16">
-                        <div class="otr-img-wrapper">
-                            <img class="otr-img-16" src="/images/ontheroad/19.pic_hd.jpg" onclick="openImage(this);">
-                        </div>                    
-                    </div>
-                </div>
-                <div class="otr-row">
-                    <div class="otr-col-16">
-                        <div class="otr-img-wrapper">
-                            <img class="otr-img-16" src="/images/ontheroad/DSC_0084-2.jpeg" onclick="openImage(this);">
-                        </div>
-                    </div>
-                    <div class="otr-col-16">
-                        <div class="otr-img-wrapper">
-                            <img class="otr-img-16" src="/images/ontheroad/DSC_0069-2.jpeg" onclick="openImage(this);">
-                        </div>                    
-                    </div>
-                    <div class="otr-col-16">
-                        <div class="otr-img-wrapper">
-                            <img class="otr-img-16" src="/images/ontheroad/DSC_0110-2.jpeg" onclick="openImage(this);">
-                        </div>                    
-                    </div>
-                    <div class="otr-col-16">
-                        <div class="otr-img-wrapper">
-                            <img class="otr-img-16" src="/images/ontheroad/DSC_0154-2.jpeg" onclick="openImage(this);">
-                        </div>                    
-                    </div>
-                    <div class="otr-col-16">
-                        <div class="otr-img-wrapper">
-                            <img class="otr-img-16" src="/images/ontheroad/DSC_0048-2.jpeg" onclick="openImage(this);">
-                        </div>                    
-                    </div>
-                    <div class="otr-col-16">
-                        <div class="otr-img-wrapper">
-                            <img class="otr-img-16" src="/images/ontheroad/14.pic_hd.jpg" onclick="openImage(this);">
-                        </div>                    
-                    </div>
-                </div>
-            </div>
-            <div class="about-spacer">
-                <div class="about-spacer-content">
-                    &nbsp;
-                </div>
-            </div>
-            <div class="date-location-wrapper">
-                <p class="date-location">2016.3.1 - 2016.3.5  Phnom Penh, Siem Reap</p>
-            </div>
-            <div class="images-wrapper">
-                <div class="otr-row">
-                    <div class="otr-col-16">
-                        <div class="otr-img-wrapper">
-                            <img class="otr-img-16" src="/images/ontheroad/IMG_9579.jpeg" onclick="openImage(this);">
-                        </div>
-                    </div>
-                    <div class="otr-col-16">
-                        <div class="otr-img-wrapper">
-                            <img class="otr-img-16" src="/images/ontheroad/IMG_9577.jpeg" onclick="openImage(this);">
-                        </div>                    
-                    </div>
-                    <div class="otr-col-16">
-                        <div class="otr-img-wrapper">
-                            <img class="otr-img-16" src="/images/ontheroad/IMG_9588.jpeg" onclick="openImage(this);">
-                        </div>                    
-                    </div>
-                    <div class="otr-col-16">
-                        <div class="otr-img-wrapper">
-                            <img class="otr-img-16" src="/images/ontheroad/IMG_9583.jpeg" onclick="openImage(this);">
-                        </div>                    
-                    </div>
-                    <div class="otr-col-16">
-                        <div class="otr-img-wrapper">
-                            <img class="otr-img-16" src="/images/ontheroad/IMG_9587.jpeg" onclick="openImage(this);">
-                        </div>                    
-                    </div>
-                    <div class="otr-col-16">
-                        <div class="otr-img-wrapper">
-                            <img class="otr-img-16" src="/images/ontheroad/IMG_9582.jpeg" onclick="openImage(this);">
-                        </div>                    
-                    </div>
-                </div>
-                <div class="otr-row">
-                    <div class="otr-col-16">
-                        <div class="otr-img-wrapper">
-                            <img class="otr-img-16" src="/images/ontheroad/IMG_9573.jpeg" onclick="openImage(this);">
-                        </div>
-                    </div>
-                    <div class="otr-col-16">
-                        <div class="otr-img-wrapper">
-                            <img class="otr-img-16" src="/images/ontheroad/IMG_9574.jpeg" onclick="openImage(this);">
-                        </div>                    
-                    </div>
-                    <div class="otr-col-16">
-                        <div class="otr-img-wrapper">
-                            <img class="otr-img-16" src="/images/ontheroad/IMG_9578.jpeg" onclick="openImage(this);">
-                        </div>                    
-                    </div>
-                    <div class="otr-col-16">
-                        <div class="otr-img-wrapper">
-                            <img class="otr-img-16" src="/images/ontheroad/IMG_9580.jpeg" onclick="openImage(this);">
-                        </div>                    
-                    </div>
-                    <div class="otr-col-16">
-                        <div class="otr-img-wrapper">
-                            <img class="otr-img-16" src="/images/ontheroad/IMG_9581.jpeg" onclick="openImage(this);">
-                        </div>                    
-                    </div>
-                    <div class="otr-col-16">
-                        <div class="otr-img-wrapper">
-                            <img class="otr-img-16" src="/images/ontheroad/IMG_9584.jpeg" onclick="openImage(this);">
-                        </div>                    
-                    </div>
-                </div>
-                <div class="otr-row">
-                    <div class="otr-col-16">
-                        <div class="otr-img-wrapper">
-                            <img class="otr-img-16" src="/images/ontheroad/IMG_9585.jpeg" onclick="openImage(this);">
-                        </div>
-                    </div>
-                    <div class="otr-col-16">
-                        <div class="otr-img-wrapper">
-                            <img class="otr-img-16" src="/images/ontheroad/IMG_9586.jpeg" onclick="openImage(this);">
-                        </div>                    
-                    </div>
-                    <div class="otr-col-16">
-                        <div class="otr-img-wrapper">
-                            <img class="otr-img-16" src="/images/ontheroad/IMG_9591.jpeg" onclick="openImage(this);">
-                        </div>                    
-                    </div>
-                    <div class="otr-col-16">
-                        <div class="otr-img-wrapper">
-                            <img class="otr-img-16" src="/images/ontheroad/IMG_9592.jpeg" onclick="openImage(this);">
-                        </div>                    
-                    </div>
-                    <div class="otr-col-16">
-                        <div class="otr-img-wrapper">
-                            <img class="otr-img-16" src="/images/ontheroad/IMG_9590.jpeg" onclick="openImage(this);">
-                        </div>                    
-                    </div>
-                    <div class="otr-col-16">
-                        <div class="otr-img-wrapper">
-                            <img class="otr-img-16" src="/images/ontheroad/DSCF0389.jpeg" onclick="openImage(this);">
-                        </div>                    
-                    </div>
-                </div>
-            </div>
-            <div class="about-spacer">
-                <div class="about-spacer-content">
-                    &nbsp;
-                </div>
-            </div>
-            <div class="date-location-wrapper">
-                <p class="date-location">2015.6  Tokyo, Stanley Island, Hong Kong</p>
-            </div>
-            <div class="images-wrapper">
-                <div class="otr-row">
-                    <div class="otr-col-33">
-                        <div class="otr-img-wrapper">
-                            <img class="otr-img" src="/images/ontheroad/IMG_3442.jpeg" onclick="openImage(this);">
-                        </div>
-                    </div>
-                    <div class="otr-col-33">
-                        <div class="otr-img-wrapper">
-                            <img class="otr-img" src="/images/ontheroad/IMG_3263.jpeg" onclick="openImage(this);">
-                        </div>                    
-                    </div>
-                    <div class="otr-col-33">
-                        <div class="otr-img-wrapper">
-                            <img class="otr-img" src="/images/ontheroad/IMG_3441.jpeg" onclick="openImage(this);">
-                        </div>                    
-                    </div>
-                </div>
-                <div class="otr-row">
-                    <div class="otr-col-33">
-                        <div class="otr-img-wrapper">
-                            <img class="otr-img" src="/images/ontheroad/IMG_2931.jpeg" onclick="openImage(this);">
-                        </div>
-                    </div>
-                    <div class="otr-col-33">
-                        <div class="otr-img-wrapper">
-                            <img class="otr-img" src="/images/ontheroad/IMG_3443.jpeg" onclick="openImage(this);">
-                        </div>                    
-                    </div>
-                    <div class="otr-col-33">
-                        <div class="otr-img-wrapper">
-                            <img class="otr-img" src="/images/ontheroad/IMG_3444.jpeg" onclick="openImage(this);">
-                        </div>                    
-                    </div>
-                </div>
-                <div class="otr-row">
-                    <div class="otr-col-33">
-                        <div class="otr-img-wrapper">
-                            <img class="otr-img" src="/images/ontheroad/IMG_3445.jpeg" onclick="openImage(this);">
-                        </div>
-                    </div>
-                    <div class="otr-col-33">
-                        <div class="otr-img-wrapper">
-                            <img class="otr-img" src="/images/ontheroad/IMG_3447.jpeg" onclick="openImage(this);">
-                        </div>                    
-                    </div>
-                    <div class="otr-col-33">
-                        <div class="otr-img-wrapper">
-                            <img class="otr-img" src="/images/ontheroad/IMG_3446.jpeg" onclick="openImage(this);">
-                        </div>                    
-                    </div>
-                </div>
-            </div>
-            <div class="about-spacer">
-                <div class="about-spacer-content">
-                    &nbsp;
-                </div>
-            </div>
-            <div class="date-location-wrapper">
-                <p class="date-location">2015.10 Tai O, Hong Kong</p>
-            </div>
-            <div class="images-wrapper">
-                <div class="otr-row">
-                    <div class="otr-col-33">
-                        <div class="otr-img-wrapper">
-                            <img class="otr-img" src="/images/ontheroad/IMG_9810.jpeg" onclick="openImage(this);">
-                        </div>
-                    </div>
-                    <div class="otr-col-33">
-                        <div class="otr-img-wrapper">
-                            <img class="otr-img" src="/images/ontheroad/IMG_9792.jpeg" onclick="openImage(this);">
-                        </div>                    
-                    </div>
-                    <div class="otr-col-33">
-                        <div class="otr-img-wrapper">
-                            <img class="otr-img" src="/images/ontheroad/IMG_9791.jpeg" onclick="openImage(this);">
-                        </div>                    
-                    </div>
-                </div>
-                <div class="otr-row">
-                    <div class="otr-col-33">
-                        <div class="otr-img-wrapper">
-                            <img class="otr-img" src="/images/ontheroad/IMG_9808.jpeg" onclick="openImage(this);">
-                        </div>
-                    </div>
-                    <div class="otr-col-33">
-                        <div class="otr-img-wrapper">
-                            <img class="otr-img" src="/images/ontheroad/IMG_9804.jpeg" onclick="openImage(this);">
-                        </div>                    
-                    </div>
-                    <div class="otr-col-33">
-                        <div class="otr-img-wrapper">
-                            <img class="otr-img" src="/images/ontheroad/IMG_9780.jpeg" onclick="openImage(this);">
-                        </div>                    
-                    </div>
-                </div>
-            </div>
-            <div class="about-spacer">
-                <div class="about-spacer-content">
-                    &nbsp;
-                </div>
-            </div>
-            <div class="date-location-wrapper">
-                <p class="date-location">2015.7.29  City University of Hong Kong, Hong Kong</p>
-            </div>
-            <div class="images-wrapper">
-                <div class="otr-row">
-                    <div class="otr-col">
-                        <div class="otr-img-wrapper">
-                            <img class="otr-img" src="/images/ontheroad/000003_1.jpeg" onclick="openImage(this);">
-                        </div>
-                    </div>
-                    <div class="otr-col">
-                        <div class="otr-img-wrapper">
-                            <img class="otr-img" src="/images/ontheroad/000008.jpeg" onclick="openImage(this);">
-                        </div>                    
-                    </div>
-                    <div class="otr-col">
-                        <div class="otr-img-wrapper">
-                            <img class="otr-img" src="/images/ontheroad/000010.jpeg" onclick="openImage(this);">
-                        </div>                    
-                    </div>
-                    <div class="otr-col">
-                        <div class="otr-img-wrapper">
-                            <img class="otr-img" src="/images/ontheroad/000038.jpeg" onclick="openImage(this);">
-                        </div>                    
-                    </div>
-                </div>
-                <div class="otr-row">
-                    <div class="otr-col">
-                        <div class="otr-img-wrapper">
-                            <img class="otr-img" src="/images/ontheroad/000013.jpeg" onclick="openImage(this);">
-                        </div>
-                    </div>
-                    <div class="otr-col">
-                        <div class="otr-img-wrapper">
-                            <img class="otr-img" src="/images/ontheroad/000014.jpeg" onclick="openImage(this);">
-                        </div>                    
-                    </div>
-                    <div class="otr-col">
-                        <div class="otr-img-wrapper">
-                            <img class="otr-img" src="/images/ontheroad/000009.jpeg" onclick="openImage(this);">
-                        </div>                    
-                    </div>
-                    <div class="otr-col">
-                        <div class="otr-img-wrapper">
-                            <img class="otr-img" src="/images/ontheroad/000024_1.jpeg" onclick="openImage(this);">
-                        </div>                    
-                    </div>
-                </div>
-            </div>
-            <div class="about-spacer">
-                <div class="about-spacer-content">
-                    &nbsp;
-                </div>
-            </div>
-            <div class="date-location-wrapper">
-                <p class="date-location">2014.12.10 Home, Beijing</p>
-            </div>
-            <div class="images-wrapper">
-                <div class="otr-row">
-                    <div class="otr-col-16">
-                        <div class="otr-img-wrapper">
-                            <img class="otr-img-16" src="/images/ontheroad/IMG_9265.jpeg" onclick="openImage(this);">
-                        </div>
-                    </div>
-                    <div class="otr-col-16">
-                        <div class="otr-img-wrapper">
-                            <img class="otr-img-16" src="/images/ontheroad/IMG_9277.jpeg" onclick="openImage(this);">
-                        </div>                    
-                    </div>
-                    <div class="otr-col-16">
-                        <div class="otr-img-wrapper">
-                            <img class="otr-img-16" src="/images/ontheroad/IMG_9267.jpeg" onclick="openImage(this);">
-                        </div>                    
-                    </div>
-                    <div class="otr-col-16">
-                        <div class="otr-img-wrapper">
-                            <img class="otr-img-16" src="/images/ontheroad/IMG_9259.jpeg" onclick="openImage(this);">
-                        </div>                    
-                    </div>
-                    <div class="otr-col-16">
-                        <div class="otr-img-wrapper">
-                            <img class="otr-img-16" src="/images/ontheroad/IMG_9255.jpeg" onclick="openImage(this);">
-                        </div>                    
-                    </div>
-                    <div class="otr-col-16">
-                        <div class="otr-img-wrapper">
-                            <img class="otr-img-16" src="/images/ontheroad/IMG_9279.jpeg" onclick="openImage(this);">
-                        </div>                    
-                    </div>
-                </div>
-            </div>
+          </div>
         </div>
+        <div class="about-spacer">
+          <div class="about-spacer-content">&nbsp;</div>
+        </div>
+        <div class="date-location-wrapper">
+          <p class="date-location">2017.12.22 - 2017.12.26 Seattle, Portland</p>
+        </div>
+        <div class="images-wrapper">
+          <div class="otr-row">
+            <div class="otr-col">
+              <div class="otr-img-wrapper">
+                <img
+                  class="otr-img"
+                  src="/images/ontheroad/1.jpeg"
+                  onclick="openImage(this);"
+                />
+              </div>
+            </div>
+            <div class="otr-col">
+              <div class="otr-img-wrapper">
+                <img
+                  class="otr-img"
+                  src="/images/ontheroad/3.jpeg"
+                  onclick="openImage(this);"
+                />
+              </div>
+            </div>
+            <div class="otr-col">
+              <div class="otr-img-wrapper">
+                <img
+                  class="otr-img"
+                  src="/images/ontheroad/4.jpeg"
+                  onclick="openImage(this);"
+                />
+              </div>
+            </div>
+            <div class="otr-col">
+              <div class="otr-img-wrapper">
+                <img
+                  class="otr-img"
+                  src="/images/ontheroad/5.jpeg"
+                  onclick="openImage(this);"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="otr-row">
+            <div class="otr-col">
+              <div class="otr-img-wrapper">
+                <img
+                  class="otr-img"
+                  src="/images/ontheroad/12.jpeg"
+                  onclick="openImage(this);"
+                />
+              </div>
+            </div>
+            <div class="otr-col">
+              <div class="otr-img-wrapper">
+                <img
+                  class="otr-img"
+                  src="/images/ontheroad/8.jpeg"
+                  onclick="openImage(this);"
+                />
+              </div>
+            </div>
+            <div class="otr-col">
+              <div class="otr-img-wrapper">
+                <img
+                  class="otr-img"
+                  src="/images/ontheroad/9.jpeg"
+                  onclick="openImage(this);"
+                />
+              </div>
+            </div>
+            <div class="otr-col">
+              <div class="otr-img-wrapper">
+                <img
+                  class="otr-img"
+                  src="/images/ontheroad/7.jpeg"
+                  onclick="openImage(this);"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="otr-row">
+            <div class="otr-col">
+              <div class="otr-img-wrapper">
+                <img
+                  class="otr-img"
+                  src="/images/ontheroad/10.jpeg"
+                  onclick="openImage(this);"
+                />
+              </div>
+            </div>
+            <div class="otr-col">
+              <div class="otr-img-wrapper">
+                <img
+                  class="otr-img"
+                  src="/images/ontheroad/11.jpeg"
+                  onclick="openImage(this);"
+                />
+              </div>
+            </div>
+            <div class="otr-col">
+              <div class="otr-img-wrapper">
+                <img
+                  class="otr-img"
+                  src="/images/ontheroad/13.jpeg"
+                  onclick="openImage(this);"
+                />
+              </div>
+            </div>
+            <div class="otr-col">
+              <div class="otr-img-wrapper">
+                <img
+                  class="otr-img"
+                  src="/images/ontheroad/14.jpeg"
+                  onclick="openImage(this);"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="about-spacer">
+          <div class="about-spacer-content">&nbsp;</div>
+        </div>
+        <div class="date-location-wrapper">
+          <p class="date-location">
+            2017.5.19 - 2017.5.25 Ho Chi Minh, Mui Ne, Da Lat
+          </p>
+        </div>
+        <div class="images-wrapper">
+          <div class="otr-row">
+            <div class="otr-col-33">
+              <div class="otr-img-wrapper">
+                <img
+                  class="otr-img"
+                  src="/images/ontheroad/000004.jpeg"
+                  onclick="openImage(this);"
+                />
+              </div>
+            </div>
+            <div class="otr-col-33">
+              <div class="otr-img-wrapper">
+                <img
+                  class="otr-img"
+                  src="/images/ontheroad/000028.jpeg"
+                  onclick="openImage(this);"
+                />
+              </div>
+            </div>
+            <div class="otr-col-33">
+              <div class="otr-img-wrapper">
+                <img
+                  class="otr-img"
+                  src="/images/ontheroad/000019.jpeg"
+                  onclick="openImage(this);"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="otr-row">
+            <div class="otr-col-33">
+              <div class="otr-img-wrapper">
+                <img
+                  class="otr-img"
+                  src="/images/ontheroad/000020.jpeg"
+                  onclick="openImage(this);"
+                />
+              </div>
+            </div>
+            <div class="otr-col-33">
+              <div class="otr-img-wrapper">
+                <img
+                  class="otr-img"
+                  src="/images/ontheroad/000003.jpeg"
+                  onclick="openImage(this);"
+                />
+              </div>
+            </div>
+            <div class="otr-col-33">
+              <div class="otr-img-wrapper">
+                <img
+                  class="otr-img"
+                  src="/images/ontheroad/000027.jpeg"
+                  onclick="openImage(this);"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="otr-row">
+            <div class="otr-col-33">
+              <div class="otr-img-wrapper">
+                <img
+                  class="otr-img"
+                  src="/images/ontheroad/000030.jpeg"
+                  onclick="openImage(this);"
+                />
+              </div>
+            </div>
+            <div class="otr-col-33">
+              <div class="otr-img-wrapper">
+                <img
+                  class="otr-img"
+                  src="/images/ontheroad/000031.jpeg"
+                  onclick="openImage(this);"
+                />
+              </div>
+            </div>
+            <div class="otr-col-33">
+              <div class="otr-img-wrapper">
+                <img
+                  class="otr-img"
+                  src="/images/ontheroad/000030+(1).jpeg"
+                  onclick="openImage(this);"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="otr-row">
+            <div class="otr-col-33">
+              <div class="otr-img-wrapper">
+                <img
+                  class="otr-img"
+                  src="/images/ontheroad/000012.jpeg"
+                  onclick="openImage(this);"
+                />
+              </div>
+            </div>
+            <div class="otr-col-33">
+              <div class="otr-img-wrapper">
+                <img
+                  class="otr-img"
+                  src="/images/ontheroad/000019+(1).jpeg"
+                  onclick="openImage(this);"
+                />
+              </div>
+            </div>
+            <div class="otr-col-33">
+              <div class="otr-img-wrapper">
+                <img
+                  class="otr-img"
+                  src="/images/ontheroad/000030+(2).jpeg"
+                  onclick="openImage(this);"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="otr-row">
+            <div class="otr-col-33">
+              <div class="otr-img-wrapper">
+                <img
+                  class="otr-img"
+                  src="/images/ontheroad/000031+(1).jpeg"
+                  onclick="openImage(this);"
+                />
+              </div>
+            </div>
+            <div class="otr-col-33">
+              <div class="otr-img-wrapper">
+                <img
+                  class="otr-img"
+                  src="/images/ontheroad/000032.jpeg"
+                  onclick="openImage(this);"
+                />
+              </div>
+            </div>
+            <div class="otr-col-33">
+              <div class="otr-img-wrapper">
+                <img
+                  class="otr-img"
+                  src="/images/ontheroad/000033.jpeg"
+                  onclick="openImage(this);"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="about-spacer">
+          <div class="about-spacer-content">&nbsp;</div>
+        </div>
+        <div class="date-location-wrapper">
+          <p class="date-location">2016.5.20 - 2016.5.29 Lhasa, Tibet</p>
+        </div>
+        <div class="images-wrapper">
+          <div class="otr-row">
+            <div class="otr-col-33">
+              <div class="otr-img-wrapper">
+                <img
+                  class="otr-img"
+                  src="/images/ontheroad/000039.jpeg"
+                  onclick="openImage(this);"
+                />
+              </div>
+            </div>
+            <div class="otr-col-33">
+              <div class="otr-img-wrapper">
+                <img
+                  class="otr-img"
+                  src="/images/ontheroad/000035.jpeg"
+                  onclick="openImage(this);"
+                />
+              </div>
+            </div>
+            <div class="otr-col-33">
+              <div class="otr-img-wrapper">
+                <img
+                  class="otr-img"
+                  src="/images/ontheroad/000033_1.jpeg"
+                  onclick="openImage(this);"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="otr-row">
+            <div class="otr-col-33">
+              <div class="otr-img-wrapper">
+                <img
+                  class="otr-img"
+                  src="/images/ontheroad/000029.jpeg"
+                  onclick="openImage(this);"
+                />
+              </div>
+            </div>
+            <div class="otr-col-33">
+              <div class="otr-img-wrapper">
+                <img
+                  class="otr-img"
+                  src="/images/ontheroad/000028_1.jpeg"
+                  onclick="openImage(this);"
+                />
+              </div>
+            </div>
+            <div class="otr-col-33">
+              <div class="otr-img-wrapper">
+                <img
+                  class="otr-img"
+                  src="/images/ontheroad/000026.jpeg"
+                  onclick="openImage(this);"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="about-spacer">
+          <div class="about-spacer-content">&nbsp;</div>
+        </div>
+        <div class="date-location-wrapper">
+          <p class="date-location">
+            2016.3.23 - 2016.3.31 Moscow, Vladimir, Suzdal
+          </p>
+        </div>
+        <div class="images-wrapper">
+          <div class="otr-row">
+            <div class="otr-col-16">
+              <div class="otr-img-wrapper">
+                <img
+                  class="otr-img-16"
+                  src="/images/ontheroad/DSC_0077-2.jpeg"
+                  onclick="openImage(this);"
+                />
+              </div>
+            </div>
+            <div class="otr-col-16">
+              <div class="otr-img-wrapper">
+                <img
+                  class="otr-img-16"
+                  src="/images/ontheroad/P3300265-2.jpeg"
+                  onclick="openImage(this);"
+                />
+              </div>
+            </div>
+            <div class="otr-col-16">
+              <div class="otr-img-wrapper">
+                <img
+                  class="otr-img-16"
+                  src="/images/ontheroad/11.pic_hd.jpg"
+                  onclick="openImage(this);"
+                />
+              </div>
+            </div>
+            <div class="otr-col-16">
+              <div class="otr-img-wrapper">
+                <img
+                  class="otr-img-16"
+                  src="/images/ontheroad/13.pic_hd.jpg"
+                  onclick="openImage(this);"
+                />
+              </div>
+            </div>
+            <div class="otr-col-16">
+              <div class="otr-img-wrapper">
+                <img
+                  class="otr-img-16"
+                  src="/images/ontheroad/10.pic_hd.jpg"
+                  onclick="openImage(this);"
+                />
+              </div>
+            </div>
+            <div class="otr-col-16">
+              <div class="otr-img-wrapper">
+                <img
+                  class="otr-img-16"
+                  src="/images/ontheroad/19.pic_hd.jpg"
+                  onclick="openImage(this);"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="otr-row">
+            <div class="otr-col-16">
+              <div class="otr-img-wrapper">
+                <img
+                  class="otr-img-16"
+                  src="/images/ontheroad/DSC_0084-2.jpeg"
+                  onclick="openImage(this);"
+                />
+              </div>
+            </div>
+            <div class="otr-col-16">
+              <div class="otr-img-wrapper">
+                <img
+                  class="otr-img-16"
+                  src="/images/ontheroad/DSC_0069-2.jpeg"
+                  onclick="openImage(this);"
+                />
+              </div>
+            </div>
+            <div class="otr-col-16">
+              <div class="otr-img-wrapper">
+                <img
+                  class="otr-img-16"
+                  src="/images/ontheroad/DSC_0110-2.jpeg"
+                  onclick="openImage(this);"
+                />
+              </div>
+            </div>
+            <div class="otr-col-16">
+              <div class="otr-img-wrapper">
+                <img
+                  class="otr-img-16"
+                  src="/images/ontheroad/DSC_0154-2.jpeg"
+                  onclick="openImage(this);"
+                />
+              </div>
+            </div>
+            <div class="otr-col-16">
+              <div class="otr-img-wrapper">
+                <img
+                  class="otr-img-16"
+                  src="/images/ontheroad/DSC_0048-2.jpeg"
+                  onclick="openImage(this);"
+                />
+              </div>
+            </div>
+            <div class="otr-col-16">
+              <div class="otr-img-wrapper">
+                <img
+                  class="otr-img-16"
+                  src="/images/ontheroad/14.pic_hd.jpg"
+                  onclick="openImage(this);"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="about-spacer">
+          <div class="about-spacer-content">&nbsp;</div>
+        </div>
+        <div class="date-location-wrapper">
+          <p class="date-location">2016.3.1 - 2016.3.5 Phnom Penh, Siem Reap</p>
+        </div>
+        <div class="images-wrapper">
+          <div class="otr-row">
+            <div class="otr-col-16">
+              <div class="otr-img-wrapper">
+                <img
+                  class="otr-img-16"
+                  src="/images/ontheroad/IMG_9579.jpeg"
+                  onclick="openImage(this);"
+                />
+              </div>
+            </div>
+            <div class="otr-col-16">
+              <div class="otr-img-wrapper">
+                <img
+                  class="otr-img-16"
+                  src="/images/ontheroad/IMG_9577.jpeg"
+                  onclick="openImage(this);"
+                />
+              </div>
+            </div>
+            <div class="otr-col-16">
+              <div class="otr-img-wrapper">
+                <img
+                  class="otr-img-16"
+                  src="/images/ontheroad/IMG_9588.jpeg"
+                  onclick="openImage(this);"
+                />
+              </div>
+            </div>
+            <div class="otr-col-16">
+              <div class="otr-img-wrapper">
+                <img
+                  class="otr-img-16"
+                  src="/images/ontheroad/IMG_9583.jpeg"
+                  onclick="openImage(this);"
+                />
+              </div>
+            </div>
+            <div class="otr-col-16">
+              <div class="otr-img-wrapper">
+                <img
+                  class="otr-img-16"
+                  src="/images/ontheroad/IMG_9587.jpeg"
+                  onclick="openImage(this);"
+                />
+              </div>
+            </div>
+            <div class="otr-col-16">
+              <div class="otr-img-wrapper">
+                <img
+                  class="otr-img-16"
+                  src="/images/ontheroad/IMG_9582.jpeg"
+                  onclick="openImage(this);"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="otr-row">
+            <div class="otr-col-16">
+              <div class="otr-img-wrapper">
+                <img
+                  class="otr-img-16"
+                  src="/images/ontheroad/IMG_9573.jpeg"
+                  onclick="openImage(this);"
+                />
+              </div>
+            </div>
+            <div class="otr-col-16">
+              <div class="otr-img-wrapper">
+                <img
+                  class="otr-img-16"
+                  src="/images/ontheroad/IMG_9574.jpeg"
+                  onclick="openImage(this);"
+                />
+              </div>
+            </div>
+            <div class="otr-col-16">
+              <div class="otr-img-wrapper">
+                <img
+                  class="otr-img-16"
+                  src="/images/ontheroad/IMG_9578.jpeg"
+                  onclick="openImage(this);"
+                />
+              </div>
+            </div>
+            <div class="otr-col-16">
+              <div class="otr-img-wrapper">
+                <img
+                  class="otr-img-16"
+                  src="/images/ontheroad/IMG_9580.jpeg"
+                  onclick="openImage(this);"
+                />
+              </div>
+            </div>
+            <div class="otr-col-16">
+              <div class="otr-img-wrapper">
+                <img
+                  class="otr-img-16"
+                  src="/images/ontheroad/IMG_9581.jpeg"
+                  onclick="openImage(this);"
+                />
+              </div>
+            </div>
+            <div class="otr-col-16">
+              <div class="otr-img-wrapper">
+                <img
+                  class="otr-img-16"
+                  src="/images/ontheroad/IMG_9584.jpeg"
+                  onclick="openImage(this);"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="otr-row">
+            <div class="otr-col-16">
+              <div class="otr-img-wrapper">
+                <img
+                  class="otr-img-16"
+                  src="/images/ontheroad/IMG_9585.jpeg"
+                  onclick="openImage(this);"
+                />
+              </div>
+            </div>
+            <div class="otr-col-16">
+              <div class="otr-img-wrapper">
+                <img
+                  class="otr-img-16"
+                  src="/images/ontheroad/IMG_9586.jpeg"
+                  onclick="openImage(this);"
+                />
+              </div>
+            </div>
+            <div class="otr-col-16">
+              <div class="otr-img-wrapper">
+                <img
+                  class="otr-img-16"
+                  src="/images/ontheroad/IMG_9591.jpeg"
+                  onclick="openImage(this);"
+                />
+              </div>
+            </div>
+            <div class="otr-col-16">
+              <div class="otr-img-wrapper">
+                <img
+                  class="otr-img-16"
+                  src="/images/ontheroad/IMG_9592.jpeg"
+                  onclick="openImage(this);"
+                />
+              </div>
+            </div>
+            <div class="otr-col-16">
+              <div class="otr-img-wrapper">
+                <img
+                  class="otr-img-16"
+                  src="/images/ontheroad/IMG_9590.jpeg"
+                  onclick="openImage(this);"
+                />
+              </div>
+            </div>
+            <div class="otr-col-16">
+              <div class="otr-img-wrapper">
+                <img
+                  class="otr-img-16"
+                  src="/images/ontheroad/DSCF0389.jpeg"
+                  onclick="openImage(this);"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="about-spacer">
+          <div class="about-spacer-content">&nbsp;</div>
+        </div>
+        <div class="date-location-wrapper">
+          <p class="date-location">2015.6 Tokyo, Stanley Island, Hong Kong</p>
+        </div>
+        <div class="images-wrapper">
+          <div class="otr-row">
+            <div class="otr-col-33">
+              <div class="otr-img-wrapper">
+                <img
+                  class="otr-img"
+                  src="/images/ontheroad/IMG_3442.jpeg"
+                  onclick="openImage(this);"
+                />
+              </div>
+            </div>
+            <div class="otr-col-33">
+              <div class="otr-img-wrapper">
+                <img
+                  class="otr-img"
+                  src="/images/ontheroad/IMG_3263.jpeg"
+                  onclick="openImage(this);"
+                />
+              </div>
+            </div>
+            <div class="otr-col-33">
+              <div class="otr-img-wrapper">
+                <img
+                  class="otr-img"
+                  src="/images/ontheroad/IMG_3441.jpeg"
+                  onclick="openImage(this);"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="otr-row">
+            <div class="otr-col-33">
+              <div class="otr-img-wrapper">
+                <img
+                  class="otr-img"
+                  src="/images/ontheroad/IMG_2931.jpeg"
+                  onclick="openImage(this);"
+                />
+              </div>
+            </div>
+            <div class="otr-col-33">
+              <div class="otr-img-wrapper">
+                <img
+                  class="otr-img"
+                  src="/images/ontheroad/IMG_3443.jpeg"
+                  onclick="openImage(this);"
+                />
+              </div>
+            </div>
+            <div class="otr-col-33">
+              <div class="otr-img-wrapper">
+                <img
+                  class="otr-img"
+                  src="/images/ontheroad/IMG_3444.jpeg"
+                  onclick="openImage(this);"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="otr-row">
+            <div class="otr-col-33">
+              <div class="otr-img-wrapper">
+                <img
+                  class="otr-img"
+                  src="/images/ontheroad/IMG_3445.jpeg"
+                  onclick="openImage(this);"
+                />
+              </div>
+            </div>
+            <div class="otr-col-33">
+              <div class="otr-img-wrapper">
+                <img
+                  class="otr-img"
+                  src="/images/ontheroad/IMG_3447.jpeg"
+                  onclick="openImage(this);"
+                />
+              </div>
+            </div>
+            <div class="otr-col-33">
+              <div class="otr-img-wrapper">
+                <img
+                  class="otr-img"
+                  src="/images/ontheroad/IMG_3446.jpeg"
+                  onclick="openImage(this);"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="about-spacer">
+          <div class="about-spacer-content">&nbsp;</div>
+        </div>
+        <div class="date-location-wrapper">
+          <p class="date-location">2015.10 Tai O, Hong Kong</p>
+        </div>
+        <div class="images-wrapper">
+          <div class="otr-row">
+            <div class="otr-col-33">
+              <div class="otr-img-wrapper">
+                <img
+                  class="otr-img"
+                  src="/images/ontheroad/IMG_9810.jpeg"
+                  onclick="openImage(this);"
+                />
+              </div>
+            </div>
+            <div class="otr-col-33">
+              <div class="otr-img-wrapper">
+                <img
+                  class="otr-img"
+                  src="/images/ontheroad/IMG_9792.jpeg"
+                  onclick="openImage(this);"
+                />
+              </div>
+            </div>
+            <div class="otr-col-33">
+              <div class="otr-img-wrapper">
+                <img
+                  class="otr-img"
+                  src="/images/ontheroad/IMG_9791.jpeg"
+                  onclick="openImage(this);"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="otr-row">
+            <div class="otr-col-33">
+              <div class="otr-img-wrapper">
+                <img
+                  class="otr-img"
+                  src="/images/ontheroad/IMG_9808.jpeg"
+                  onclick="openImage(this);"
+                />
+              </div>
+            </div>
+            <div class="otr-col-33">
+              <div class="otr-img-wrapper">
+                <img
+                  class="otr-img"
+                  src="/images/ontheroad/IMG_9804.jpeg"
+                  onclick="openImage(this);"
+                />
+              </div>
+            </div>
+            <div class="otr-col-33">
+              <div class="otr-img-wrapper">
+                <img
+                  class="otr-img"
+                  src="/images/ontheroad/IMG_9780.jpeg"
+                  onclick="openImage(this);"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="about-spacer">
+          <div class="about-spacer-content">&nbsp;</div>
+        </div>
+        <div class="date-location-wrapper">
+          <p class="date-location">
+            2015.7.29 City University of Hong Kong, Hong Kong
+          </p>
+        </div>
+        <div class="images-wrapper">
+          <div class="otr-row">
+            <div class="otr-col">
+              <div class="otr-img-wrapper">
+                <img
+                  class="otr-img"
+                  src="/images/ontheroad/000003_1.jpeg"
+                  onclick="openImage(this);"
+                />
+              </div>
+            </div>
+            <div class="otr-col">
+              <div class="otr-img-wrapper">
+                <img
+                  class="otr-img"
+                  src="/images/ontheroad/000008.jpeg"
+                  onclick="openImage(this);"
+                />
+              </div>
+            </div>
+            <div class="otr-col">
+              <div class="otr-img-wrapper">
+                <img
+                  class="otr-img"
+                  src="/images/ontheroad/000010.jpeg"
+                  onclick="openImage(this);"
+                />
+              </div>
+            </div>
+            <div class="otr-col">
+              <div class="otr-img-wrapper">
+                <img
+                  class="otr-img"
+                  src="/images/ontheroad/000038.jpeg"
+                  onclick="openImage(this);"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="otr-row">
+            <div class="otr-col">
+              <div class="otr-img-wrapper">
+                <img
+                  class="otr-img"
+                  src="/images/ontheroad/000013.jpeg"
+                  onclick="openImage(this);"
+                />
+              </div>
+            </div>
+            <div class="otr-col">
+              <div class="otr-img-wrapper">
+                <img
+                  class="otr-img"
+                  src="/images/ontheroad/000014.jpeg"
+                  onclick="openImage(this);"
+                />
+              </div>
+            </div>
+            <div class="otr-col">
+              <div class="otr-img-wrapper">
+                <img
+                  class="otr-img"
+                  src="/images/ontheroad/000009.jpeg"
+                  onclick="openImage(this);"
+                />
+              </div>
+            </div>
+            <div class="otr-col">
+              <div class="otr-img-wrapper">
+                <img
+                  class="otr-img"
+                  src="/images/ontheroad/000024_1.jpeg"
+                  onclick="openImage(this);"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="about-spacer">
+          <div class="about-spacer-content">&nbsp;</div>
+        </div>
+        <div class="date-location-wrapper">
+          <p class="date-location">2014.12.10 Home, Beijing</p>
+        </div>
+        <div class="images-wrapper">
+          <div class="otr-row">
+            <div class="otr-col-16">
+              <div class="otr-img-wrapper">
+                <img
+                  class="otr-img-16"
+                  src="/images/ontheroad/IMG_9265.jpeg"
+                  onclick="openImage(this);"
+                />
+              </div>
+            </div>
+            <div class="otr-col-16">
+              <div class="otr-img-wrapper">
+                <img
+                  class="otr-img-16"
+                  src="/images/ontheroad/IMG_9277.jpeg"
+                  onclick="openImage(this);"
+                />
+              </div>
+            </div>
+            <div class="otr-col-16">
+              <div class="otr-img-wrapper">
+                <img
+                  class="otr-img-16"
+                  src="/images/ontheroad/IMG_9267.jpeg"
+                  onclick="openImage(this);"
+                />
+              </div>
+            </div>
+            <div class="otr-col-16">
+              <div class="otr-img-wrapper">
+                <img
+                  class="otr-img-16"
+                  src="/images/ontheroad/IMG_9259.jpeg"
+                  onclick="openImage(this);"
+                />
+              </div>
+            </div>
+            <div class="otr-col-16">
+              <div class="otr-img-wrapper">
+                <img
+                  class="otr-img-16"
+                  src="/images/ontheroad/IMG_9255.jpeg"
+                  onclick="openImage(this);"
+                />
+              </div>
+            </div>
+            <div class="otr-col-16">
+              <div class="otr-img-wrapper">
+                <img
+                  class="otr-img-16"
+                  src="/images/ontheroad/IMG_9279.jpeg"
+                  onclick="openImage(this);"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
     <script>
-        function openMenu(x) {
-            document.getElementById('mobMenu').classList.toggle("change-menu");
-            x.classList.toggle("change");
-        }
+      function openMenu(x) {
+        document.getElementById("mobMenu").classList.toggle("change-menu");
+        x.classList.toggle("change");
+      }
     </script>
- </body>
+  </body>
 </html>
